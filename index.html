@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tasbeh">
+        <input type="text" class="ekran" value="0">
+        <button class="tugma"></button>   
+        <button class="tugma1"></button> 
+    </div>
+</body>
+    <script type="text/javascript">
+
+        document.querySelector('.tugma').addEventListener('click', function(){
+           let ekran = document.querySelector('.ekran');
+            console.log(typeof parseInt(ekran.value));
+            ekran.value = parseInt(ekran.value) +1;
+        });
+        document.querySelector('.tugma1').addEventListener('click', function(){
+            document.querySelector('.ekran').value = 0; 
+        })
+    </script>
+</html>
