@@ -10,7 +10,7 @@
   <body>
     <div class="tasbeh">
       <input type="text" id="div" class="ekran" disabled value="0" />
-      <button class="tugma"></button>
+      <button class="tugma" onclick="vibrate(1000)" ></button>
       <button class="tugma1"></button>
       <button id="button" class="tugma2"></button>
     </div>
@@ -31,5 +31,12 @@
       const colorIndex=parseInt(Math.random()*colors.length);
       div.style.backgroundColor=colors[colorIndex];
     })
+    function vibrate(ms){
+      navigator.vibrate(ms);
+    }
+
+    function vibratePattern(){
+      navigator.vibrate([300, 100, 300, 300])
+    }
   </script>
 </html>
