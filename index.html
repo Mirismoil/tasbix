@@ -32,12 +32,16 @@
       div.style.backgroundColor=colors[colorIndex];
     })
 
-   let vib= function vibrate(ms){
+  //  function vibrate(ms){
+  //       navigator.vibrate(ms);
+  //       navigator.vibrate([100,300])
+  //     }
+    let vibratsiya=prompt('Vibratsiya keremi?')
+    if(prompt=="ha"){
+   function vibrate(ms){
         navigator.vibrate(ms);
         navigator.vibrate([100,300])
       }
-    let vibratsiya=prompt('Vibratsiya keremi?')
-    if(prompt=="ha"){vib
     }else(prompt=="yo'q")
       function vibrate(ms){
         navigator.vibrate(ms);
